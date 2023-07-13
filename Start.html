@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styler1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="light">dfd</div>
+        <div class="container">
+            <div class="box box1">0</div>
+            <div class="box box2">0</div>
+            <div class="box box3">0</div>
+            <div class="box box4">0</div>  
+        </div>
+        <button class="start">Start</button>
+        <a href="index.php" class="logout">Đăng xuất</a>
+    </div>
+    <script>
+        const box1 = document.querySelector('.box1')
+        const box2 = document.querySelector('.box2')
+        const box3 = document.querySelector('.box3')
+        const box4 = document.querySelector('.box4')
+        const startBtn = document.querySelector('.start');
+        startBtn.addEventListener('click',xuly);
+        function xuly()
+        {
+            let count1 = 0, count2 = 0, count3 = 0, count4 = 0;
+            const intervalId = setInterval(() => {
+                if (count1 < 20) {
+                    box1.innerHTML = Math.floor(Math.random()*10);
+                    count1++;
+                }
+                else
+                {
+                    box1.innerHTML = 2;
+                }
+                if (count2 < 40) {
+                    box2.innerHTML = Math.floor(Math.random()*10);
+                    count2++;
+                }
+                else
+                {
+                    box2.innerHTML = 0;
+                }
+                if (count3 < 60) {
+                    box3.innerHTML = Math.floor(Math.random()*10);
+                    count3++;
+                }
+                else
+                {
+                    box3.innerHTML = 0;
+                }
+                if (count4 < 80) {
+                    box4.innerHTML = Math.floor(Math.random()*10);
+                    count4++;
+                }
+                else
+                {
+                    box4.innerHTML = 2;
+                }
+            }, 60);
+        }
+    </script>
+</body>
+</html>

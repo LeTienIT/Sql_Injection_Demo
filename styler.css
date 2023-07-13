@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    position: fixed;
+    width: 50%;
+    top: 0;bottom: 0;left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(85, 241, 92, 0.5); */
+    background-image: url(../web_sql/backgroud/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-login{
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.514);
+}
+.heading{
+    color: yellow;
+    font-size: 30px;
+    padding: 30px 25px;
+    font-family: cursive;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.box,.box1{
+    padding: 20px 20px;
+}
+.box label{
+    color: yellow;
+    font-size: 22px;
+}
+.box input{
+    color: red;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: 20px;
+}
+.tbao p{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.box1 .login{
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+.box1 a{
+    font-size: 18px;
+    color: rgb(255,0,0);
+    text-decoration: none;
+    float: right;
+    padding: 10px 0;
+    margin: 10px;
+    background-color: rgba(70, 240, 36, 0.432);
+}
+/* RESET PASS */
+#main .cont-pass h3{
+    padding: 10px 15px;
+    color: rgb(30, 255, 0);
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+}
+#main .cont-pass .subn{
+    padding: 10px 0 10px 30px;
+    color: palevioletred;
+}
+#main .cont-pass form{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+#main .cont-pass form input{
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: red;
+    color: yellow;
+}
+#main .cont-pass form input:hover{
+    background-color: black;
+    cursor: pointer;
+}
+#main .cont-pass h3 span{
+    color: yellow;
+    font-weight: 600;
+}
+#test_dl{
+   
+    position: fixed;
+    flex-wrap: wrap;
+    width: 50%;
+    top: 0;bottom: 0;right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(85, 241, 92, 0.5); 
+}
+/* QUANLY.PHP */
+.work-table{
+    height: 50%;
+    padding: 16px 0 0 0;
+}
+.work-table h1{
+    color: rgb(255, 230, 0);
+    font-family: cursive;
+    text-shadow:12px 2px 5px black;
+    font-weight: 800;
+    text-align: center;
+    padding: 15px 0;
+}
+.work-table .tab{
+    width: 100%;
+    overflow-x: auto; /* tạo thanh cuộn ngang */
+    overflow-y: auto; /* tạo thanh cuộn dọc */
+    border-collapse:collapse;
+    border:1px solid black;
+}
+.work-table .tab tr{
+   text-align: left;
+}
+.work-table .tab tr th{
+    color: red;
+    font-size: 18px;
+    font-weight: 800;
+    border:1px solid black;
+    padding: 12px;
+}
+.work-table .tab tr td{
+    font-size: 16px;
+    font-weight: 600;
+    border:1px solid black;
+    padding: 12px;
+}
